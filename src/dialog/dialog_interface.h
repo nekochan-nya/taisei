@@ -28,6 +28,8 @@
 	WITHOUT_EVENTS (Stage5PostBoss)                                   \
 	WITH_EVENTS    (Stage6PreBoss,     (boss_appears, music_changes)) \
 	WITHOUT_EVENTS (Stage6PreFinal)                                   \
+	WITH_EVENTS    (StageExPreBoss,    (boss_appears, music_changes)) \
+	WITHOUT_EVENTS (StageExPostBoss)                                  \
 
 
 
@@ -58,22 +60,5 @@ typedef struct PlayerDialogTasks {
 
 #undef WITH_EVENTS
 #undef WITHOUT_EVENTS
-
-// FIXME: might not be the best place for this
-typedef struct PlayerDialogProcs {
-	void (*stage1_pre_boss)(Dialog *d);
-	void (*stage1_post_boss)(Dialog *d);
-	void (*stage2_pre_boss)(Dialog *d);
-	void (*stage2_post_boss)(Dialog *d);
-	void (*stage3_pre_boss)(Dialog *d);
-	void (*stage3_post_boss)(Dialog *d);
-	void (*stage4_pre_boss)(Dialog *d);
-	void (*stage4_post_boss)(Dialog *d);
-	void (*stage5_post_midboss)(Dialog *d);
-	void (*stage5_pre_boss)(Dialog *d);
-	void (*stage5_post_boss)(Dialog *d);
-	void (*stage6_pre_boss)(Dialog *d);
-	void (*stage6_pre_final)(Dialog *d);
-} PlayerDialogProcs;
 
 #endif // IGUARD_dialog_dialog_interface_h

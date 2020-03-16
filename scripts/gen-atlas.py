@@ -290,10 +290,10 @@ def pack_rects_brute_force(rects, bin_size, single_bin):
     ]
 
     algos = []
-    # MaxRects is the slowest algorithm, but the results blow the other two out of the water.
-    # algos += algos_guillotine
+    # MaxRects is the slowest algorithm, but the results blow the other two out of the water (usually).
+    algos += algos_guillotine
     algos += algos_maxrects
-    # algos += algos_skyline
+    algos += algos_skyline
 
     sorts = [
         (rectpack.SORT_AREA,  'area'),
