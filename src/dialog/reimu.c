@@ -694,7 +694,7 @@ DIALOG_TASK(reimu, StageExPreBoss) {
 	FACE(reimu, puzzled);
 	MSG(reimu, "How’s that Gensōkyō’s problem?");
 	MSG(reimu, "It’s not like we invaded you and put you on that path.");
-	FACE(yumemi, eyes_closed);
+	FACE(yumemi, sigh);
 	MSG(yumemi, "If only it were that simple.");
 	FACE(yumemi, normal);
 	MSG(yumemi, "Places like this tempt people into forgetting their real lives. ");
@@ -725,7 +725,7 @@ DIALOG_TASK(reimu, StageExPreBoss) {
 	MSG(reimu, "People won’t stop day-dreaming just because you tell them to. Fantasy is in people’s hearts and minds.");
 	MSG(reimu, "So, even if you managed to destroy Gensōkyō—");
 	MSG(yumemi, "Youkai, Gods, magicians, flying shrine maidens… it’s all harmful, delusional nonsense.");
-	// FACE(reimu, surpassed);
+	// FACE(reimu, unsettled);
 	MSG(reimu, "So you want genocide?");
 	FACE(yumemi, surprised);
 	MSG(yumemi, "Genocide…? What a harsh word. You’re not real. No one is being killed.");
@@ -740,13 +740,14 @@ DIALOG_TASK(reimu, StageExPreBoss) {
 	FACE(reimu, sigh);
 	MSG(reimu, "It’s hard to keep people on your side when all you do is threaten them, idiot!");
 	MSG(reimu, "Have you tried not being a genocidal maniac?");
-	FACE(yumemi, eyes_closed);
+	FACE(yumemi, sigh);
 	MSG(yumemi, "I’m tired, shrine maiden. Too tired to explain my life to a figment of imagination.");
 	FACE(reimu, unamused);
 	MSG(reimu, "Sucks to be you. Don’t make it our problem.");
 	EVENT(music_changes);
 	FACE(yumemi, normal);
 	MSG(yumemi, "Oh, but it’s inherently your problem.");
+	FACE(yumemi, eyes_closed);
 	MSG(yumemi, "Farewell, shrine maiden. I would say it’s been nice knowing you, but…");
 	FACE(yumemi, sad);
 	MSG(yumemi, "There’s really no way I could’ve known you at all.");
