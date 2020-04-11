@@ -857,9 +857,6 @@ static bool extra_postprocess_fog(Framebuffer *fb) {
 }
 
 void extra_draw_yumemi_portrait_overlay(SpriteParams *sp) {
-	Texture *code_tex = r_texture_get("stageex/code");
-	ShaderProgram *shader = r_shader_get("sprite_yumemi_overlay");
-
 	sp->sprite = NULL;
 	sp->sprite_ptr = get_sprite("dialog/yumemi_misc_code_mask");
 	sp->shader = NULL;
